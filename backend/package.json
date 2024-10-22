@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
-    "build": "tsc",
+    "build": "tsc && npm run copy",
     "dev": "ts-node src/server.ts",
     "migrate": "npx knex migrate:latest --knexfile src/db/knexfile.ts",
-    "start": "node ./build/src/server.js"
+    "start": "node ./build/src/server.js",
+    "copy": "cp ./src/db/repository -r build/db/repository"
   },
   "keywords": [],
   "author": "",
