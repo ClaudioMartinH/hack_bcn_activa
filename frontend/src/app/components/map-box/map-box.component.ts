@@ -1,9 +1,11 @@
-import { Component, Input, OnInit, ElementRef, ViewChild, signal, inject } from '@angular/core';
+import { Component, Input, ViewChild, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import * as Mapboxgl from 'mapbox-gl';
 import { environment } from '../../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
+// import * as districts from '../../../assets/barcelona_districtes.geojson';
+// import * as districts from '../../../assets/barcelona_districtes.geojson';
 
 @Component({
   selector: 'app-map-box',
@@ -20,25 +22,29 @@ export class MapBoxComponent {
   @Input() lat: number = 41.390205;
   @Input() zoom: number = 10;
 
+  url: string = 'assets/barcelona_districtes.geojson';
+
   districts: any;
 
   http = inject(HttpClient);
 
   ngOnInit() {
-    // this.carregarDadesGeojson();
+    this.carregarDadesGeojson();
     this.initMap();
     this.getLngLat();
   }
 
   async carregarDadesGeojson() {
     try {
-      const response = await firstValueFrom(this.http.get('/assets/barcelona_districtes.geojson'))
+      console.log('entra!!!')
+      const response = await firstValueFrom(this.http.get(this.url))
       console.log(response)
       this.districts = response;
       this.initMap();
       this.getLngLat();
     } catch (error) {
-      console.log(error)
+
+      console.log('ERRRORRR!!', error)
     }
 
   }
@@ -54,7 +60,7 @@ export class MapBoxComponent {
 
     // this.map.addSource('districtes', {
     //   type: 'geojson',
-    //   data: this.districts
+    //   data: districts
     // });
 
     // this.map.addLayer({
