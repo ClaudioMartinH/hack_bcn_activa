@@ -1,11 +1,4 @@
-{
-      "district_id":7,
-      "district_name":"Horta-Guinard\u00f3",
-      "addresses_road_name":"Alt de Pedrell",
-      "name":"Escola de M\u00fasica Pausa",
-      "Type":"Reglada",
-      "Sub_type":"M\u00fasica"
-}
+{"district_id":7,"district_name":"Horta-Guinard\u00f3","addresses_road_name":"Alt de Pedrell","name":"Escola de M\u00fasica Pausa","Type":"Reglada","Sub_type":"M\u00fasica"}
 {"district_id":2,"district_name":"Eixample","addresses_road_name":"Arag\u00f3","name":"Centre Educatiu Euroaula","Type":"Reglada","Sub_type":"Formaci\u00f3 professional"}
 {"district_id":2,"district_name":"Eixample","addresses_road_name":"Arag\u00f3","name":"Centre Educatiu Euroaula","Type":"Reglada","Sub_type":"Universitats"}
 {"district_id":7,"district_name":"Horta-Guinard\u00f3","addresses_road_name":"Av Can Marcet","name":"Centre Educatiu CETT","Type":"Reglada","Sub_type":"Formaci\u00f3 professional"}
