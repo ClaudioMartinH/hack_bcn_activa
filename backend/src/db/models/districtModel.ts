@@ -15,6 +15,7 @@ export interface IDistrict{
 
 const districtSchema = new mongoose.Schema({
       name: { type: String, required: true },
+      district_code: { type: String, required: true },
       location: { type: String, required: true },
       digital_gap: { type: String, required: true },
       educational_center: { type: String, required: true },

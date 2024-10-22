@@ -15,7 +15,7 @@ export class ApiService {
 
 
   getDistrict(id: string, endpoint: DistrictEndpoint) {
-    return this.http.get(`${ApiService.BASE_URL}/district/${id}/${endpoint}`);
+    return this.http.get(`${ApiService.BASE_URL}/districts/${id}/${endpoint}`);
   }
 
   getDistricts() {
