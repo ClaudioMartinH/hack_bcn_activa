@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'grid-cols': 'grid-template-columns',
+      },
+    },
   },
   plugins: [],
 }
