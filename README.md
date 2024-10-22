@@ -23,7 +23,6 @@ The backend is responsible for managing and processing data, while the frontend 
 - **Express.js**: A web framework for Node.js, providing a set of robust features for web applications.
 - **MongoDB**: NoSQL database used for managing the application's data.
 - **Mongoose**: ODM (Object Data Modeling) library for MongoDB in Node.js.
-- **Knex.js**: SQL query builder (optional if integrated with any SQL-based data sources).
 
 ### Frontend
 - **Angular**: A platform and framework for building client-side applications using HTML, CSS, and TypeScript.
