@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export interface IDistrict {
+export interface IDistrict{
       name: string
       district_code: string
       location: string
@@ -23,6 +23,7 @@ const districtSchema = new mongoose.Schema({
       createdAt: { type: Date, default: Date.now },
       updatedAt: { type: Date, default: null },
 })
+
 
 const District = mongoose.model<IDistrict>('District', districtSchema)
 
