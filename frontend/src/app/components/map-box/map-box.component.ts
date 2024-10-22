@@ -144,7 +144,7 @@ export class MapBoxComponent {
   async getDistrictData(id: string) {
     const endpoints: DistrictEndpoint[] = ['digitalGap', 'educationalCenter', 'employmentSituation', 'incomePerPerson'];
     try {
-      const response = await Promise.all(endpoints.map(endpoint => this.apiService.getDistrict(id, endpoint)));
+      const response = await Promise.all(endpoints.map(endpoint => firstValueFrom(this.apiService.getDistrict(id, endpoint))));
       console.log({ response })
     } catch (error) {
       console.error(error);
