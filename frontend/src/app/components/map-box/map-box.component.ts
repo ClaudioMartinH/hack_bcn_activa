@@ -35,8 +35,6 @@ export class MapBoxComponent {
   ngOnInit() {
     console.log({ geo })
     this.carregarDadesGeojson();
-    // this.initMap();
-    // this.getLngLat();
   }
 
   async carregarDadesGeojson() {
@@ -75,17 +73,19 @@ export class MapBoxComponent {
       this.initializeGeojsonSources();
     });
 
-    this.map.on('mouseenter', 'districtes-layer', () => {
-      this.map.getCanvas().style.cursor = 'pointer';
-      // Canvia l'opacitat del districte en hover
-      this.map.setPaintProperty('districtes-layer', 'fill-opacity', 0.7);
-    });
 
-    // Torna a l'opacitat inicial quan el ratolí surt del districte
-    this.map.on('mouseleave', 'districtes-layer', () => {
-      this.map.getCanvas().style.cursor = '';
-      this.map.setPaintProperty('districtes-layer', 'fill-opacity', 0.4);
-    });
+
+    // this.map.on('mouseenter', 'districtes-layer', () => {
+    //   this.map.getCanvas().style.cursor = 'pointer';
+    //   // Canvia l'opacitat del districte en hover
+    //   this.map.setPaintProperty('districtes-layer', 'fill-opacity', 0.7);
+    // });
+
+    // // Torna a l'opacitat inicial quan el ratolí surt del districte
+    // this.map.on('mouseleave', 'districtes-layer', () => {
+    //   this.map.getCanvas().style.cursor = '';
+    //   this.map.setPaintProperty('districtes-layer', 'fill-opacity', 0.4);
+    // });
 
 
   }
@@ -93,7 +93,8 @@ export class MapBoxComponent {
   initializeGeojsonSources() {
     this.map.addSource('districtes', {
       type: 'geojson',
-      data: this.districts
+      data: this.districts,
+      generateId: true
     });
 
     this.map.addLayer({
@@ -116,8 +117,61 @@ export class MapBoxComponent {
           10, 'white',
           '#CCCCCC'
         ],
-        'fill-opacity': 0.4
+        'fill-opacity': [
+          'case',
+          ['boolean', ['feature-state', 'hover'], false],
+          0.7,
+          0.4
+        ]
       }
+    });
+
+    let hoveredDistrictId: number | null = null;
+
+    // Canvia l'estat de hover mentre el ratolí es mou pel mapa
+    this.map.on('mousemove', 'districtes-layer', (e) => {
+      this.map.getCanvas().style.cursor = 'pointer';
+
+      const features = this.map.queryRenderedFeatures(e.point, {
+        layers: ['districtes-layer'],
+        filter: ['==', '$type', 'Polygon']
+      });
+
+      const id = Number(e.features?.[0]?.properties?.['codi_districte']);
+
+      // Si el districte actual és diferent del que ja tenim, actualitza l'estat
+      if (id !== hoveredDistrictId) {
+        // Restaura l'estat del districte anterior
+        if (hoveredDistrictId !== null) {
+          this.map.setFeatureState(
+            { source: 'districtes', id: hoveredDistrictId },
+            { hover: false }
+          );
+        }
+
+        // Marca el districte sobre el qual fem hover
+        hoveredDistrictId = id;
+        console.log({ hoveredDistrictId })
+
+        this.map.setFeatureState(
+          { source: 'districtes', id: hoveredDistrictId },
+          { hover: true }
+        );
+      }
+    });
+
+    // Restaura l'estat quan el ratolí surt del mapa
+    this.map.on('mouseleave', 'districtes-layer', () => {
+      this.map.getCanvas().style.cursor = '';
+
+      if (hoveredDistrictId !== null) {
+        this.map.setFeatureState(
+          { source: 'districtes', id: hoveredDistrictId },
+          { hover: false }
+        );
+      }
+
+      hoveredDistrictId = null;
     });
 
   }
@@ -128,7 +182,7 @@ export class MapBoxComponent {
       console.log(e.lngLat);
 
       const features = this.map.queryRenderedFeatures(e.point, {
-        layers: ['districtes-layer']
+        layers: ['districtes-layer'],
       });
       console.log({ features: features?.[0]?.properties?.['codi_districte'] })
       // this.onCreateMarker(e.lngLat.lng, e.lngLat.lat);
@@ -144,7 +198,7 @@ export class MapBoxComponent {
   async getDistrictData(id: string) {
     const endpoints: DistrictEndpoint[] = ['digitalGap', 'educationalCenter', 'employmentSituation', 'incomePerPerson'];
     try {
-      const response = await Promise.all(endpoints.map(endpoint => this.apiService.getDistrict(id, endpoint)));
+      const response = await Promise.all(endpoints.map(endpoint => firstValueFrom(this.apiService.getDistrict(id, endpoint))));
       console.log({ response })
     } catch (error) {
       console.error(error);
