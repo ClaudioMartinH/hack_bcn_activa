@@ -4,6 +4,7 @@ import * as Mapboxgl from 'mapbox-gl';
 import { environment } from '../../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
+import { geo } from '../../helpers/geo';
 // import * as districts from '../../../assets/barcelona_districtes.geojson';
 // import * as districts from '../../../assets/barcelona_districtes.geojson';
 
@@ -29,14 +30,14 @@ export class MapBoxComponent {
   http = inject(HttpClient);
 
   ngOnInit() {
+    console.log({ geo })
     this.carregarDadesGeojson();
-    this.initMap();
-    this.getLngLat();
+    // this.initMap();
+    // this.getLngLat();
   }
 
   async carregarDadesGeojson() {
     try {
-      console.log('entra!!!')
       const response = await firstValueFrom(this.http.get(this.url))
       console.log(response)
       this.districts = response;
@@ -58,9 +59,41 @@ export class MapBoxComponent {
       zoom: this.zoom
     });
 
-    // this.map.addSource('districtes', {
-    //   type: 'geojson',
-    //   data: districts
+    this.map.addControl(new Mapboxgl.NavigationControl());
+    this.map.addControl(new Mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    }));
+
+    this.map.on('load', () => {
+      console.log('Mapa carregat correctament');
+      this.initializeGeojsonSources();
+    });
+
+
+
+    // this.map.addLayer({
+    //   'id': 'districtes-layer',
+    //   'type': 'fill',
+    //   'source': 'districtes',
+    //   'paint': {
+    //     'fill-color': '#888',
+    //     'fill-opacity': 0.4
+    //   }
+    // });
+
+    // this.map.on('click', (e) => {
+    //   console.log('click')
+    //   const features = this.map.queryRenderedFeatures(e.point, {
+    //     layers: ['districtes-layer']
+    //   });
+
+    //   if (features.length) {
+    //     const districte = features?.[0]?.properties?.['codi_districte'];
+    //     alert(`Has clicat al districte: ${districte}`);
+    //   }
     // });
 
     // this.map.addLayer({
@@ -71,7 +104,7 @@ export class MapBoxComponent {
     //   paint: {
     //     'fill-color': [
     //       'match',
-    //       ['get', 'DISTRICT_NAME'],
+    //       ['get', 'codi_districte'],
     //       'Barcelona', 'red',
     //       'Girona', 'blue',
     //       'Lleida', 'green',
@@ -94,10 +127,47 @@ export class MapBoxComponent {
     // });
   }
 
+  initializeGeojsonSources() {
+    this.map.addSource('districtes', {
+      type: 'geojson',
+      data: this.districts
+    });
+
+    this.map.addLayer({
+      'id': 'districtes-layer',
+      'type': 'fill',
+      'source': 'districtes',
+      'paint': {
+        'fill-color': [
+          'match',
+          ['get', 'codi_districte'],
+          1, 'red',
+          2, 'blue',
+          3, 'green',
+          4, 'yellow',
+          5, 'purple',
+          6, 'orange',
+          7, 'brown',
+          8, 'black',
+          9, 'gray',
+          10, 'white',
+          '#CCCCCC'
+        ],
+        'fill-opacity': 0.4
+      }
+    });
+
+  }
+
   getLngLat() {
     this.map.on('click', (e) => {
       e.preventDefault();
       console.log(e.lngLat);
+
+      const features = this.map.queryRenderedFeatures(e.point, {
+        layers: ['districtes-layer']
+      });
+      console.log({ features })
       // this.onCreateMarker(e.lngLat.lng, e.lngLat.lat);
     });
   }
