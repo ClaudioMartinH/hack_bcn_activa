@@ -15,11 +15,11 @@ export interface IDistrict{
 
 const districtSchema = new mongoose.Schema({
       name: { type: String, required: true },
-      location: { type: String, required: false },
-      digital_gap: { type: String, required: false },
-      educational_center: { type: String, required: false },
-      employment_situation: { type: String, required: false },
-      income_per_person: { type: String, required: false },
+      location: { type: String, required: true },
+      digital_gap: { type: String, required: true },
+      educational_center: { type: String, required: true },
+      employment_situation: { type: String, required: true },
+      income_per_person: { type: String, required: true },
       createdAt: { type: Date, default: Date.now },
       updatedAt: { type: Date, default: null },
 })
