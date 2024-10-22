@@ -26,6 +26,7 @@ export class MapBoxComponent {
   @Input() zoom: number = 11.2;
 
   url: string = 'assets/barcelona_districtes.geojson';
+  hoveredDistrictId: string | null = null;
 
   districts: any;
 
@@ -51,7 +52,13 @@ export class MapBoxComponent {
     try {
       const response = await firstValueFrom(this.http.get(this.url))
       console.log(response)
-      this.districts = response;
+      this.districts = {
+        ...response,
+        features: (response as any).features.map((feature: any) => ({
+          ...feature,
+          id: feature.properties.codi_districte
+        }))
+      };
       this.initMap();
       this.getLngLat();
     } catch (error) {
@@ -104,7 +111,6 @@ export class MapBoxComponent {
     this.map.addSource('districtes', {
       type: 'geojson',
       data: this.districts,
-      generateId: true
     });
 
     this.map.addLayer({
@@ -136,37 +142,46 @@ export class MapBoxComponent {
       }
     });
 
-    let hoveredDistrictId: number | null = null;
+    this.map.addLayer({
+      id: 'districtes-borders',
+      type: 'line',
+      source: 'districtes',
+      layout: {},
+      paint: {
+        'line-color': '#000', // Black color for the borders
+        'line-width': 1
+      }
+    });
+
+    // let hoveredDistrictId: number | null = null;
 
     // Canvia l'estat de hover mentre el ratolí es mou pel mapa
     this.map.on('mousemove', 'districtes-layer', (e) => {
-      this.map.getCanvas().style.cursor = 'pointer';
+      if (!e?.features) return;
+      if (e?.features?.length > 0) {
+        this.map.getCanvas().style.cursor = 'pointer';
 
-      const features = this.map.queryRenderedFeatures(e.point, {
-        layers: ['districtes-layer'],
-        filter: ['==', '$type', 'Polygon']
-      });
+        const feature = e.features[0];
+        const districtId = feature?.properties?.['codi_districte'];
 
-      const id = Number(e.features?.[0]?.properties?.['codi_districte']);
+        if (this.hoveredDistrictId !== districtId) {
+          // Eliminem l'estat hover anterior
+          if (this.hoveredDistrictId) {
+            this.map.setFeatureState(
+              { source: 'districtes', id: this.hoveredDistrictId },
+              { hover: false }
+            );
+          }
 
-      // Si el districte actual és diferent del que ja tenim, actualitza l'estat
-      if (id !== hoveredDistrictId) {
-        // Restaura l'estat del districte anterior
-        if (hoveredDistrictId !== null) {
+          this.hoveredDistrictId = districtId;
+
+          // Establim el nou estat hover
+          const id = Number(this.hoveredDistrictId);
           this.map.setFeatureState(
-            { source: 'districtes', id: hoveredDistrictId },
-            { hover: false }
+            { source: 'districtes', id: id },
+            { hover: true }
           );
         }
-
-        // Marca el districte sobre el qual fem hover
-        hoveredDistrictId = id;
-        console.log({ hoveredDistrictId })
-
-        this.map.setFeatureState(
-          { source: 'districtes', id: hoveredDistrictId },
-          { hover: true }
-        );
       }
     });
 
@@ -174,14 +189,14 @@ export class MapBoxComponent {
     this.map.on('mouseleave', 'districtes-layer', () => {
       this.map.getCanvas().style.cursor = '';
 
-      if (hoveredDistrictId !== null) {
+      if (this.hoveredDistrictId !== null) {
         this.map.setFeatureState(
-          { source: 'districtes', id: hoveredDistrictId },
+          { source: 'districtes', id: this.hoveredDistrictId },
           { hover: false }
         );
       }
 
-      hoveredDistrictId = null;
+      this.hoveredDistrictId = null;
     });
 
   }
