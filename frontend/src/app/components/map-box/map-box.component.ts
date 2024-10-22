@@ -27,14 +27,13 @@ export class MapBoxComponent {
 
   url: string = 'assets/barcelona_districtes.geojson';
   hoveredDistrictId: string | null = null;
-
+  popup: Mapboxgl.Popup | null = null;
   districts: any;
 
   http = inject(HttpClient);
   private apiService = inject(ApiService);
 
   ngOnInit() {
-    console.log({ geo })
     this.carregarDadesGeojson();
     if (window.innerWidth < 768) {
       this.zoom = 10.3;
@@ -75,6 +74,12 @@ export class MapBoxComponent {
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [this.lng, this.lat],
       zoom: this.zoom
+    });
+
+    this.popup = new Mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false,
+      className: 'district-popup'
     });
 
     this.map.addControl(new Mapboxgl.NavigationControl());
@@ -163,6 +168,18 @@ export class MapBoxComponent {
 
         const feature = e.features[0];
         const districtId = feature?.properties?.['codi_districte'];
+        const districtName = feature?.properties?.['nom_districte'];
+
+        if (this.popup) {
+          this.popup
+            .setLngLat(e.lngLat)
+            .setHTML(`
+              <div class="district-tooltip">
+                <h4 class="text-lg font-semibold">${districtName}</h4>
+              </div>
+            `)
+            .addTo(this.map);
+        }
 
         if (this.hoveredDistrictId !== districtId) {
           // Eliminem l'estat hover anterior
@@ -195,8 +212,11 @@ export class MapBoxComponent {
           { hover: false }
         );
       }
-
+      if (this.popup) {
+        this.popup.remove();
+      }
       this.hoveredDistrictId = null;
+      this.map.getCanvas().style.cursor = '';
     });
 
   }
