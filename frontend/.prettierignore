@@ -1,0 +1,35 @@
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Package Manager
+package.json
+package-lock.json
+yarn.lock
+
+# Angular-related
+.angular
+/dist
+/coverage
+
+# Project
+build
+docker
+src/.well-known
+src/sitemaps
+src/assets/fonts
+src/assets/images/*
+src/assets/icons/*

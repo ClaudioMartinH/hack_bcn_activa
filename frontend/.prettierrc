@@ -1,0 +1,61 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "arrowParens": "avoid",
+  "trailingComma": "none",
+  "printWidth": 140,
+  "semi": true,
+  "importOrder": ["^@app/(.*)$", "^@core/(.*)$", "^@shared/(.*)$", "^[./]"],
+  "importOrderParserPlugins": ["typescript", "classProperties", "decorators-legacy"],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "plugins": ["prettier-plugin-organize-attributes", "prettier-plugin-tailwindcss"],
+  "overrides": [
+    {
+      "files": ["*.json", ".babelrc"],
+      "options": {
+        "parser": "json-stringify"
+      }
+    },
+    {
+      "files": ["*.jsonc", "tsconfig*.json"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": ["*.js", "*.cjs", "*.mjs"],
+      "options": {
+        "parser": "babel"
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "options": {
+        "parser": "typescript"
+      }
+    },
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "html",
+        "printWidth": 160,
+        "attributeGroups": [
+          "$ANGULAR_STRUCTURAL_DIRECTIVE",
+          "$ID",
+          "$ANGULAR_ELEMENT_REF",
+          "$ANGULAR_ANIMATION",
+          "$ANGULAR_ANIMATION_INPUT",
+          "$ANGULAR_TWO_WAY_BINDING",
+          "$ANGULAR_INPUT",
+          "$ANGULAR_OUTPUT",
+          "$CLASS"
+        ]
+      }
+    }
+  ]
+}
