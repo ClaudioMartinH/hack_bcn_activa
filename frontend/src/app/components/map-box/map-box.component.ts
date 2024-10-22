@@ -241,10 +241,7 @@ export class MapBoxComponent {
           this.getDistrictData(districId);
         }
       }
-      // const id = features?.[0]?.properties?.['codi_districte'];
-      // if (id) {
-      //   this.getDistrictData(id)
-      // };
+
 
     });
   }
@@ -252,7 +249,6 @@ export class MapBoxComponent {
   private zoomToDistrict(feature: Mapboxgl.MapboxGeoJSONFeature) {
     const districtId = feature.properties?.['codi_districte'];
 
-    // Eliminem l'estat selected anterior si existeix
     if (this.selectedDistrictId) {
       this.map.setFeatureState(
         { source: 'districtes', id: this.selectedDistrictId },
@@ -260,7 +256,6 @@ export class MapBoxComponent {
       );
     }
 
-    // Establim el nou districte seleccionat
     this.selectedDistrictId = districtId;
     const id = Number(this.selectedDistrictId);
     this.map.setFeatureState(
@@ -268,7 +263,6 @@ export class MapBoxComponent {
       { selected: true }
     );
 
-    // Calculem els bounds del districte
     const bounds = new Mapboxgl.LngLatBounds();
 
     if (feature.geometry.type === 'Polygon') {
@@ -283,17 +277,14 @@ export class MapBoxComponent {
       });
     }
 
-    // Fem l'animació cap al districte
     this.map.fitBounds(bounds, {
-      padding: 50, // Padding al voltant del districte
-      duration: 1000, // Duració de l'animació en mil·lisegons
-      maxZoom: 14 // Zoom màxim per evitar massa zoom en districtes petits
+      padding: 50,
+      duration: 1000,
+      maxZoom: 14
     });
   }
 
-  // Afegim un mètode per retornar a la vista general de Barcelona
   resetView() {
-    // Eliminem l'estat selected si existeix
     if (this.selectedDistrictId) {
       this.map.setFeatureState(
         { source: 'districtes', id: this.selectedDistrictId },
@@ -302,7 +293,6 @@ export class MapBoxComponent {
       this.selectedDistrictId = null;
     }
 
-    // Tornem a la vista general de Barcelona
     this.map.flyTo({
       center: [this.finalLng, this.finalLat],
       zoom: this.finalZoom,
