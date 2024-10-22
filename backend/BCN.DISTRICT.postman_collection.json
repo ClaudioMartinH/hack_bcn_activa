@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "2865a62e-1059-4034-a1a2-c85c3ae8029b",
+		"name": "BCN.DISTRICT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38118241"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/api/health"
+			},
+			"response": []
+		},
+		{
+			"name": "District by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/districts/:id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"districts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6717e7f88acd30ce50ec4e19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "digital_gap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/districts/:id/digital_gap",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"districts",
+						":id",
+						"digital_gap"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6717e7f88acd30ce50ec4e19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All districts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseUrl}}/api/districts"
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"name\": \"soy data3\",\r\n    \"district_code\": \"soy data\",\r\n    \"location\": \"soy data\",\r\n    \"population\": 100,\r\n    \"digital_gap\": \"soy data\",\r\n    \"educational_center\": \"soy data\",\r\n    \"employment_situation\": \"soy data\",\r\n    \"income_per_person\": \"soy data\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/api/districts/create"
+			},
+			"response": []
+		}
+	]
+}

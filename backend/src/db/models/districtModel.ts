@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
+import AppError from "../../api/utils/AppError";
+import { NOT_FOUND } from "../../api/constants/http";
 
-export interface IDistrict{
+export interface IDistrict extends mongoose.Document {
+      _id: mongoose.Types.ObjectId
       name: string
       district_code: string
       location: string
@@ -23,7 +26,6 @@ const districtSchema = new mongoose.Schema({
       createdAt: { type: Date, default: Date.now },
       updatedAt: { type: Date, default: null },
 })
-
 
 const District = mongoose.model<IDistrict>('District', districtSchema)
 

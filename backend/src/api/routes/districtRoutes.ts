@@ -1,26 +1,18 @@
 import express from 'express'
-import DistrictCotroller from '../controllers/districtController'
+import { CreateDistrictHandler, GetAllDistrictsHandler, GetDigitalGapHandler, GetDistrictByIdHandler, GetHealthHandler } from '../controllers/districtController'
+import District from '../../db/models/districtModel'
 
 const DistrictRoutes = express.Router()
-const districtController = new DistrictCotroller()
 
-// DistrictRoutes.get('/health', GetHealth)
-// DistrictRoutes.get('/districts', GetAllDistricts)
-// DistrictRoutes.get('/district/:id', GetDistrictById)
+//GET
+DistrictRoutes.get('/health', GetHealthHandler)
+DistrictRoutes.get('/districts', GetAllDistrictsHandler)
+DistrictRoutes.get('/districts/:id', GetDistrictByIdHandler)
 
+DistrictRoutes.get('/districts/:id/digital_gap', GetDigitalGapHandler)
 
-DistrictRoutes.get('/districts/:id/digitalGap', districtController.getDistrictById)
-DistrictRoutes.get('/districts/:id/educationCentre', districtController.getEducationCentre)
-DistrictRoutes.get('/districts/:id/employmentSituation', districtController.getEmploymentSituation)
-DistrictRoutes.get('/districts/:id/incomePerPerson', districtController.getIncomePerPerson)
-
-
-DistrictRoutes.post('/districts/create', districtController.createDistrict)
-
-DistrictRoutes.patch('/districts/edit/:id', districtController.editDistrict)
-
-
-DistrictRoutes.delete('/districts/delete/:id', districtController.deleteDistrict)
+//POST
+DistrictRoutes.post('/districts/create', CreateDistrictHandler)
 
 
 export default DistrictRoutes

@@ -3,7 +3,7 @@ import cors from "cors"
 import morgan from "morgan"
 import helmet from "helmet"
 import 'dotenv/config'
-import DistrictRoutes from "./api/routes/district"
+import DistrictRoutes from "./api/routes/districtRoutes"
 import { NODE_ENV, PORT } from "./api/constants/env"
 import errorHandler from "./api/middleware/errorHandler"
 import connectToDatabase from "./db/config/mongoose.connect"
