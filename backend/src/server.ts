@@ -7,7 +7,6 @@ import DistrictRoutes from "./api/routes/districtRoutes";
 import { NODE_ENV, PORT } from "./api/constants/env";
 import errorHandler from "./api/middleware/errorHandler";
 import connectToDatabase from "./db/config/mongoose.connect";
-import { loadAndCrossData } from "./api/utils/loadAndCrossData";
 
 const app = express();
 
@@ -22,6 +21,5 @@ app.use(errorHandler);
 
 app.listen(PORT, async () => {
   console.log(`Server running on port ${PORT} in ${NODE_ENV}`);
-  await loadAndCrossData();
   await connectToDatabase();
 });
