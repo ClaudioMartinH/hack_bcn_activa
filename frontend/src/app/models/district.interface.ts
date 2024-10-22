@@ -6,4 +6,4 @@ export interface District {
 }
 
 
-export type DistrictEndpoint = 'digitalGap' | 'educationalCenter' | ' employmentSituation' | 'incomePerPerson'
+export type DistrictEndpoint = 'digitalGap' | 'educationalCenter' | 'employmentSituation' | 'incomePerPerson'
