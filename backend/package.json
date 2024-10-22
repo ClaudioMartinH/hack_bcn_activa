@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest",
     "build": "tsc",
     "dev": "ts-node src/server.ts",
     "migrate": "npx knex migrate:latest --knexfile src/db/knexfile.ts",

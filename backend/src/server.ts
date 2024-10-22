@@ -8,7 +8,7 @@ import { NODE_ENV, PORT } from "./api/constants/env"
 import errorHandler from "./api/middleware/errorHandler"
 import connectToDatabase from "./db/config/mongoose.connect"
 
-const app = express()
+export const app = express()
 
 app.use(cors())
 app.use(express.json())

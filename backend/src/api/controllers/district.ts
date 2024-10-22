@@ -5,7 +5,6 @@ import AppError from "../utils/AppError"
 import catchErrors from "../utils/catchErrors"
 
 
-
 export const GetHealth = catchErrors( async (_, res) => {
 
       const healthMessage = await getServiceHealth()
@@ -14,6 +13,7 @@ export const GetHealth = catchErrors( async (_, res) => {
             message: healthMessage
       })
 })
+
 export const GetDistrictById = catchErrors( async (req, res) => {
 
       const { id } = req.params
