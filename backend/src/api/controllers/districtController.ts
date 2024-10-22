@@ -1,141 +1,149 @@
+import District from "../../db/models/districtModel"
 import { BAD_REQUEST, CREATED, INTERNAL_SERVER_ERROR, OK } from "../constants/http"
+import { getServiceHealth } from "../services/districtServices"
 import appAssert from "../utils/appAssert"
 import AppError from "../utils/AppError"
 import catchErrors from "../utils/catchErrors"
-import DistrictService from "../services/districtServices"
-import mongoose from "mongoose"
-import { Request, Response } from "express"
 
-export default class DistrictCotroller {
+export const GetHealthHandler = catchErrors( async (_, res) => {
 
-    districtServices = new DistrictService();
-      async createDistrict(req: Request, res: Response) {
-            const { name, district_code, location, population, digital_gap, educational_center, employment_situation, income_per_person } = req.body
+      const healthMessage = await getServiceHealth()
 
-            if (!name ||!district_code ||!location ||!population ||!digital_gap ||!educational_center ||!employment_situation ||!income_per_person) {
-                  throw new AppError(BAD_REQUEST, "All fields are required")
-            }
-            try {
-                  const newDistrict = await this.districtServices.createDistrict({
-                        name,
-                        district_code,
-                        location,
-                        population,
-                        digital_gap,
-                        educational_center,
-                        employment_situation,
-                        income_per_person,
-                        createdAt: new Date,
-                        updatedAt: new Date
-                  })
-                  res.status(CREATED).json(newDistrict)
+      res.status(OK).json({
+            message: healthMessage
+      })
+})
 
-            } catch (error) {
-                  
-                  appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
+export const GetAllDistrictsHandler = catchErrors( async (_, res) => {
+      const districts = await District.find()
+
+      if(districts.length === 0){
+            res.status(OK).json([])
+            return
+      }
+      appAssert(districts, BAD_REQUEST, 'Something went wrong...')
+
+      res.status(OK).json(districts)
+
+})
+
+export const CreateDistrictHandler = catchErrors( async (req, res) => {
+      const { 
+            name, 
+            district_code, 
+            location, 
+            population, 
+            digital_gap, 
+            educational_center, 
+            employment_situation, 
+            income_per_person 
+      } = req.body
+
+      if( 
+            !name || 
+            !district_code || 
+            !location || 
+            !population || 
+            !digital_gap || 
+            !educational_center || 
+            !employment_situation || 
+            !income_per_person ){
+            res.status(BAD_REQUEST).json({message: 'All fields are required'})
+            return
       }
 
-      async getDistrictById(req: Request, res: Response) {
-            const { id } = req.params
+      const newDistrict = await District.create({
+            name,
+            district_code,
+            location,
+            population,
+            digital_gap,
+            educational_center,
+            employment_situation,
+            income_per_person
+      })
 
-            try {
-                  const district = await this.districtServices.getDistrictById(id)
-                  res.status(OK).json(district)
-            } catch (error) {
-                  appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
+      appAssert(newDistrict, INTERNAL_SERVER_ERROR, 'Something went wrong...')
+
+      res.status(CREATED).json({
+            message: 'District Created',
+            id: newDistrict._id,
+            name: newDistrict.name
+      })
+
+})
+
+export const GetDistrictByIdHandler = catchErrors( async (req, res) => {
+      const { id } = req.params
+
+      if(!id){
+            res.status(BAD_REQUEST).json({message: 'Id is required'})
+            return
       }
 
-      async getAllDistricts(req: Request, res: Response) {
-            try {
-                  const districts = await this.districtServices.getAllDistricts()
-                  res.status(OK).json(districts)
-            } catch (error) {
-                  appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
+      const district = await District.findById(id)
+
+      appAssert(district, BAD_REQUEST, 'Something went wrong finding district...')
+
+      res.status(OK).json(district)
+
+})
+
+export const GetDigitalGapHandler = catchErrors( async (req, res) => {
+      const { id } = req.params
+
+      if(!id){
+            res.status(BAD_REQUEST).json({message: 'Id is required'})   
+            return
       }
 
-      async getDigitalGap(req: Request, res: Response) {
-            const { id } = req.params
+      const district = await District.findById(id)
 
-            try {
-                  const digitalGap = await this.districtServices.getDigitalGap(id)
-                  res.status(OK).json(digitalGap)
-            } catch (error) {
-                  appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
-      }
+      appAssert(district, BAD_REQUEST, 'Something went wrong finding district...')
 
-      async getEducationCentre(req: Request, res: Response) {
-            const { id } = req.params
+      res.status(OK).json(district.digital_gap)
+})
+// export const PostHandler = catchErrors(async (req, res) =>{
+//       const { data } = req.body
 
-            try {
-                  const educationalCenter = await this.districtServices.getEducationCentre(id)
-                  res.status(OK).json(educationalCenter)
-            } catch (error) {
-                  appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
-      }
+//       appAssert(data, BAD_REQUEST, 'Data is required')
 
-      async getEmploymentSituation(req: Request, res: Response) {
-            const { id } = req.params
+//       const newMockData = await createMockData(data)
 
-            try {
-                  const employmentSituation = await this.districtServices.getEmploymentSituation(id)
-                  res.status(OK).json(employmentSituation)
-            } catch (error) {
-                  appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
-      }
+//       appAssert(newMockData, INTERNAL_SERVER_ERROR, 'Something went wrong...')
 
-      async getIncomePerPerson(req: Request, res: Response) {
-            const { id } = req.params
+//       res.status(CREATED).json({
+//             message: "Health check. Post works!",
+//             body: newMockData
+//       })
+// })
 
-            try {
-                  const incomePerPerson = await this.districtServices.getIncomePerPerson(id)
-                  res.status(OK).json(incomePerPerson)
-            } catch (error) {
-                  appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
-      }
+// export const PatchHandler = catchErrors(async (req, res) =>{
+//       const { data } = req.body
 
-      async editDistrict(req: Request, res: Response) {
-            const { id } = req.params
-            const { name, district_code, location, population, digital_gap, educational_center, employment_situation, income_per_person } = req.body
+//       appAssert(data, BAD_REQUEST, 'Data is required')
 
-            if (!name ||!district_code ||!location ||!population ||!digital_gap ||!educational_center ||!employment_situation ||!income_per_person) {
-                   throw new AppError(BAD_REQUEST, "All fields are required")
-            }
-            
-            try {
-                  await this.districtServices.editDistrict(id, {
-                        name,
-                        district_code,
-                        location,
-                        population,
-                        digital_gap,
-                        educational_center,
-                        employment_situation,
-                        income_per_person,
-                        updatedAt: new Date,
-                        createdAt: new Date(req.body.createdAt || new Date())
-                  })
-            } catch (error) {
-                  
-                   appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
+//       const patchedMockData = await patchMockData(data)
 
-      }
+//       appAssert(patchedMockData, INTERNAL_SERVER_ERROR, 'Something went wrong...')
+      
+//       res.json({
+//             message:'Health check. Patch works!',
+//             body: patchedMockData
+//       })
+// })
 
-      async deleteDistrict(req: Request, res: Response) {
-            const { id } = req.params
+// export const DeleteHandler = catchErrors(async (req, res) => {
+//       const { data } = req.body
 
-            try {
-                  await this.districtServices.deleteDistrict(id)
-                  res.status(OK).json({ message: "District deleted successfully" })
-            } catch (error) {
-                  appAssert(error instanceof AppError, 500, "Internal Server Error")
-            }
-      }
-}
+//       appAssert(data, BAD_REQUEST, 'Data is required')
+
+//       const deletedMockData = await deleteMockData(data)
+
+//       appAssert(deletedMockData, INTERNAL_SERVER_ERROR, 'Something went wrong...')
+
+//       res.json({
+//             message:'Health check. Delete works!',
+//             body: deletedMockData
+//       })
+// })
