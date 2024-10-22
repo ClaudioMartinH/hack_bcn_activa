@@ -21,9 +21,13 @@ export class MapBoxComponent {
   @ViewChild('mapContainer') map!: Mapboxgl.Map;
   @Input() height: string = '100%';
   @Input() width: string = '100%';
-  @Input() lng: number = 2.121007;
-  @Input() lat: number = 41.390205;
-  @Input() zoom: number = 11.2;
+  @Input() finalLng: number = 2.121007;
+  @Input() finalLat: number = 41.390205;
+  @Input() finalZoom: number = 11.2;
+
+  initialLng: number = 1.520862;
+  initialLat: number = 41.670376;
+  initialZoom: number = 7;
 
   url: string = 'assets/barcelona_districtes.geojson';
   hoveredDistrictId: string | null = null;
@@ -36,13 +40,13 @@ export class MapBoxComponent {
   ngOnInit() {
     this.carregarDadesGeojson();
     if (window.innerWidth < 768) {
-      this.zoom = 10.3;
-      this.lat = 41.340205;
-      this.lng = 2.141007;
+      this.finalZoom = 10.3;
+      this.finalLat = 41.340205;
+      this.finalLng = 2.141007;
     } else if (window.innerWidth < 1024) {
-      this.zoom = 11.2;
+      this.finalZoom = 11.2;
     } else if (window.innerWidth < 1280) {
-      this.zoom = 11.3;
+      this.finalZoom = 11.3;
     }
 
   }
@@ -72,8 +76,8 @@ export class MapBoxComponent {
       container: 'map',
       accessToken: environment.mapboxKey,
       style: 'mapbox://styles/mapbox/streets-v11',
-      center: [this.lng, this.lat],
-      zoom: this.zoom
+      center: [this.initialLng, this.initialLat],
+      zoom: this.initialZoom
     });
 
     this.popup = new Mapboxgl.Popup({
@@ -93,23 +97,23 @@ export class MapBoxComponent {
     this.map.on('load', () => {
       console.log('Mapa carregat correctament');
       this.initializeGeojsonSources();
+      setTimeout(() => {
+        this.flyToBarcelona();
+      }, 1000);
     });
 
+  }
 
-
-    // this.map.on('mouseenter', 'districtes-layer', () => {
-    //   this.map.getCanvas().style.cursor = 'pointer';
-    //   // Canvia l'opacitat del districte en hover
-    //   this.map.setPaintProperty('districtes-layer', 'fill-opacity', 0.7);
-    // });
-
-    // // Torna a l'opacitat inicial quan el ratolí surt del districte
-    // this.map.on('mouseleave', 'districtes-layer', () => {
-    //   this.map.getCanvas().style.cursor = '';
-    //   this.map.setPaintProperty('districtes-layer', 'fill-opacity', 0.4);
-    // });
-
-
+  private flyToBarcelona() {
+    this.map.flyTo({
+      center: [this.finalLng, this.finalLat],
+      zoom: this.finalZoom,
+      essential: true,
+      duration: 3000,
+      easing: (t) => {
+        return t * (2 - t);
+      }
+    });
   }
 
   initializeGeojsonSources() {
