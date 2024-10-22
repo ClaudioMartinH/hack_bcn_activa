@@ -4,6 +4,7 @@ export interface IDistrict {
       name: string
       district_code: string
       location: string
+      population: number
       digital_gap: string
       educational_center: string
       employment_situation: string
