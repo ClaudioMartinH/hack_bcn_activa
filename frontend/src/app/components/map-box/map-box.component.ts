@@ -21,9 +21,9 @@ export class MapBoxComponent {
   @ViewChild('mapContainer') map!: Mapboxgl.Map;
   @Input() height: string = '100%';
   @Input() width: string = '100%';
-  @Input() lng: number = 2.154007; // Coordenades de Barcelona per defecte
+  @Input() lng: number = 2.121007;
   @Input() lat: number = 41.390205;
-  @Input() zoom: number = 10;
+  @Input() zoom: number = 11.2;
 
   url: string = 'assets/barcelona_districtes.geojson';
 
@@ -35,6 +35,16 @@ export class MapBoxComponent {
   ngOnInit() {
     console.log({ geo })
     this.carregarDadesGeojson();
+    if (window.innerWidth < 768) {
+      this.zoom = 10.3;
+      this.lat = 41.340205;
+      this.lng = 2.141007;
+    } else if (window.innerWidth < 1024) {
+      this.zoom = 11.2;
+    } else if (window.innerWidth < 1280) {
+      this.zoom = 11.3;
+    }
+
   }
 
   async carregarDadesGeojson() {
@@ -107,14 +117,14 @@ export class MapBoxComponent {
           ['get', 'codi_districte'],
           1, 'red',
           2, 'blue',
-          3, 'green',
-          4, 'yellow',
-          5, 'purple',
+          3, '#7eac74',
+          4, '#c8ed76',
+          5, '#486d70',
           6, 'orange',
           7, 'brown',
           8, 'black',
-          9, 'gray',
-          10, 'white',
+          9, 'white',
+          10, '#463c45',
           '#CCCCCC'
         ],
         'fill-opacity': [
