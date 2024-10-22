@@ -31,6 +31,7 @@ export class MapBoxComponent {
 
   url: string = 'assets/barcelona_districtes.geojson';
   hoveredDistrictId: string | null = null;
+  selectedDistrictId: string | null = null;
   popup: Mapboxgl.Popup | null = null;
   districts: any;
 
@@ -227,31 +228,97 @@ export class MapBoxComponent {
 
   async getLngLat() {
     this.map.on('click', (e) => {
-      e.preventDefault();
       console.log(e.lngLat);
 
       const features = this.map.queryRenderedFeatures(e.point, {
         layers: ['districtes-layer'],
       });
-      console.log({ features: features?.[0]?.properties?.['codi_districte'] })
-      // this.onCreateMarker(e.lngLat.lng, e.lngLat.lat);
-      const id = features?.[0]?.properties?.['codi_districte'];
-      if (id) {
-        this.getDistrictData(id)
-      };
+      if (features?.length > 0) {
+        const clickedFeature = features[0];
+        const districId = clickedFeature?.properties?.['codi_districte'];
+        if (districId) {
+          this.zoomToDistrict(clickedFeature);
+          this.getDistrictData(districId);
+        }
+      }
+      // const id = features?.[0]?.properties?.['codi_districte'];
+      // if (id) {
+      //   this.getDistrictData(id)
+      // };
 
     });
-
-
   }
-  async getDistrictData(id: string) {
-    const endpoints: DistrictEndpoint[] = ['digitalGap', 'educationalCenter', 'employmentSituation', 'incomePerPerson'];
-    try {
-      const response = await Promise.all(endpoints.map(endpoint => firstValueFrom(this.apiService.getDistrict(id, endpoint))));
-      console.log({ response })
-    } catch (error) {
-      console.error(error);
+
+  private zoomToDistrict(feature: Mapboxgl.MapboxGeoJSONFeature) {
+    const districtId = feature.properties?.['codi_districte'];
+
+    // Eliminem l'estat selected anterior si existeix
+    if (this.selectedDistrictId) {
+      this.map.setFeatureState(
+        { source: 'districtes', id: this.selectedDistrictId },
+        { selected: false }
+      );
     }
+
+    // Establim el nou districte seleccionat
+    this.selectedDistrictId = districtId;
+    const id = Number(this.selectedDistrictId);
+    this.map.setFeatureState(
+      { source: 'districtes', id },
+      { selected: true }
+    );
+
+    // Calculem els bounds del districte
+    const bounds = new Mapboxgl.LngLatBounds();
+
+    if (feature.geometry.type === 'Polygon') {
+      (feature.geometry.coordinates[0] as [number, number][]).forEach((coord) => {
+        bounds.extend(coord as Mapboxgl.LngLatLike);
+      });
+    } else if (feature.geometry.type === 'MultiPolygon') {
+      feature.geometry.coordinates.forEach((polygon) => {
+        polygon[0].forEach((coord) => {
+          bounds.extend(coord as Mapboxgl.LngLatLike);
+        });
+      });
+    }
+
+    // Fem l'animació cap al districte
+    this.map.fitBounds(bounds, {
+      padding: 50, // Padding al voltant del districte
+      duration: 1000, // Duració de l'animació en mil·lisegons
+      maxZoom: 14 // Zoom màxim per evitar massa zoom en districtes petits
+    });
+  }
+
+  // Afegim un mètode per retornar a la vista general de Barcelona
+  resetView() {
+    // Eliminem l'estat selected si existeix
+    if (this.selectedDistrictId) {
+      this.map.setFeatureState(
+        { source: 'districtes', id: this.selectedDistrictId },
+        { selected: false }
+      );
+      this.selectedDistrictId = null;
+    }
+
+    // Tornem a la vista general de Barcelona
+    this.map.flyTo({
+      center: [this.finalLng, this.finalLat],
+      zoom: this.finalZoom,
+      duration: 1000
+    });
+  }
+
+
+  async getDistrictData(id: string) {
+    // const endpoints: DistrictEndpoint[] = ['digitalGap', 'educationalCenter', 'employmentSituation', 'incomePerPerson'];
+    // try {
+    //   const response = await Promise.all(endpoints.map(endpoint => firstValueFrom(this.apiService.getDistrict(id, endpoint))));
+    //   console.log({ response })
+    // } catch (error) {
+    //   console.error(error);
+    // }
   }
 }
 
