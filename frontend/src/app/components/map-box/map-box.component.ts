@@ -25,17 +25,17 @@ export class MapBoxComponent {
   @Input() finalLat: number = 41.390205;
   @Input() finalZoom: number = 11.2;
 
-  initialLng: number = 1.520862;
-  initialLat: number = 41.670376;
-  initialZoom: number = 7;
+  public initialLng: number = 1.520862;
+  public initialLat: number = 41.670376;
+  public initialZoom: number = 7;
 
-  url: string = 'assets/barcelona_districtes.geojson';
-  hoveredDistrictId: string | null = null;
-  selectedDistrictId: string | null = null;
-  popup: Mapboxgl.Popup | null = null;
-  districts: any;
+  public url: string = 'assets/barcelona_districtes.geojson';
+  public hoveredDistrictId: string | null = null;
+  public selectedDistrictId: string | null = null;
+  public popup: Mapboxgl.Popup | null = null;
+  public districts: any;
 
-  http = inject(HttpClient);
+  private http = inject(HttpClient);
   private apiService = inject(ApiService);
 
   ngOnInit() {
@@ -158,14 +158,12 @@ export class MapBoxComponent {
       source: 'districtes',
       layout: {},
       paint: {
-        'line-color': '#000', // Black color for the borders
+        'line-color': '#000',
         'line-width': 1
       }
     });
 
-    // let hoveredDistrictId: number | null = null;
 
-    // Canvia l'estat de hover mentre el ratolí es mou pel mapa
     this.map.on('mousemove', 'districtes-layer', (e) => {
       if (!e?.features) return;
       if (e?.features?.length > 0) {
@@ -207,7 +205,6 @@ export class MapBoxComponent {
       }
     });
 
-    // Restaura l'estat quan el ratolí surt del mapa
     this.map.on('mouseleave', 'districtes-layer', () => {
       this.map.getCanvas().style.cursor = '';
 
