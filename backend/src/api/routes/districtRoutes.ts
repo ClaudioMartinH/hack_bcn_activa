@@ -9,18 +9,18 @@ const districtController = new DistrictCotroller()
 // DistrictRoutes.get('/district/:id', GetDistrictById)
 
 
-DistrictRoutes.get('/district/:id/digitalGap', districtController.getDistrictById)
-DistrictRoutes.get('/district/:id/educationCentre', districtController.getEducationCentre)
-DistrictRoutes.get('/district/:id/employmentSituation', districtController.getEmploymentSituation)
-DistrictRoutes.get('/district/:id/incomePerPerson', districtController.getIncomePerPerson)
+DistrictRoutes.get('/districts/:id/digitalGap', districtController.getDistrictById)
+DistrictRoutes.get('/districts/:id/educationCentre', districtController.getEducationCentre)
+DistrictRoutes.get('/districts/:id/employmentSituation', districtController.getEmploymentSituation)
+DistrictRoutes.get('/districts/:id/incomePerPerson', districtController.getIncomePerPerson)
 
 
-DistrictRoutes.post('/district/create', districtController.createDistrict)
+DistrictRoutes.post('/districts/create', districtController.createDistrict)
 
-DistrictRoutes.patch('/district/edit/:id', districtController.editDistrict)
+DistrictRoutes.patch('/districts/edit/:id', districtController.editDistrict)
 
 
-DistrictRoutes.delete('/district/delete/:id', districtController.deleteDistrict)
+DistrictRoutes.delete('/districts/delete/:id', districtController.deleteDistrict)
 
 
 export default DistrictRoutes

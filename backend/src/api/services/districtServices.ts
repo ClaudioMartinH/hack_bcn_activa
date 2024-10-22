@@ -1,4 +1,4 @@
-import District, { IDistrict } from "../../db/models/district";
+import District, { IDistrict } from "../../db/models/districtModel";
 
 class DistrictService {
       async getDistrictById(id: string): Promise<IDistrict>{
@@ -37,7 +37,7 @@ class DistrictService {
       }
 
       async createDistrict(district: IDistrict): Promise<IDistrict>{
-            const newDistrict = new District(district)
+            const newDistrict = await District.create(district)
             return await newDistrict.save()
       }
 
