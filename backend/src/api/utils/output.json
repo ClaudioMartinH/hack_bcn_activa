@@ -1,0 +1,18 @@
+[
+  {
+    "districtId": 7,
+    "districtName": "Horta-Guinardó",
+    "roadName": "Alt de Pedrell",
+    "educationalInstitution": "Escola de Música Pausa",
+    "type": "Reglada",
+    "subtype": "Música"
+  },
+  {
+    "districtId": 2,
+    "districtName": "Eixample",
+    "roadName": "Aragó",
+    "educationalInstitution": "Centre Educatiu Euroaula",
+    "type": "Reglada",
+    "subtype": "Formació professional"
+  }
+]
