@@ -1,3 +1,21 @@
+<!-- <app-header></app-header>
+<section class="grid grid-cols-12 mt-2">
+  <app-side-info class="col-span-3"></app-side-info>
+  <app-center-info class="col-span-9"></app-center-info>
+</section> -->
+
+
 <app-header></app-header>
-<app-center-info></app-center-info>
-<app-side-info></app-side-info>
+<section class="grid grid-cols-12 mt-2 gap-4 overflow-hidden">
+  <!-- Side Info -->
+  <app-side-info [ngClass]="{
+      'col-span-0 w-0 opacity-0 duration-500 ease-in-out transform -translate-x-full': !districtService.districtCode(),
+      'col-span-3 opacity-100 duration-500 ease-in-out transform translate-x-0': districtService.districtCode()
+    }" class="transition-all"></app-side-info>
+
+  <!-- Center Info (Map) -->
+  <app-center-info [ngClass]="{
+      'col-span-12 duration-500 ease-in-out': !districtService.districtCode(),
+      'col-span-9 duration-500 ease-in-out': districtService.districtCode()
+    }" class="transition-all"></app-center-info>
+</section>

@@ -7,6 +7,7 @@ import { firstValueFrom } from 'rxjs';
 import { geo } from '../../helpers/geo';
 import { ApiService } from '../../services/api/api.service';
 import { DistrictEndpoint } from '../../models/district.interface';
+import { DistrictService } from '../../services/state/district.service';
 // import * as districts from '../../../assets/barcelona_districtes.geojson';
 // import * as districts from '../../../assets/barcelona_districtes.geojson';
 
@@ -34,6 +35,7 @@ export class MapBoxComponent {
   public selectedDistrictId: string | null = null;
   public popup: Mapboxgl.Popup | null = null;
   public districts: any;
+  public districtState = inject(DistrictService);
 
   private http = inject(HttpClient);
   private apiService = inject(ApiService);
@@ -236,6 +238,7 @@ export class MapBoxComponent {
         if (districId) {
           this.zoomToDistrict(clickedFeature);
           this.getDistrictData(districId);
+          this.districtState.districtCode.set(Number(districId));
         }
       }
 
@@ -255,6 +258,7 @@ export class MapBoxComponent {
 
     this.selectedDistrictId = districtId;
     const id = Number(this.selectedDistrictId);
+    this.districtState.districtCode.set(id);
     this.map.setFeatureState(
       { source: 'districtes', id },
       { selected: true }
@@ -288,6 +292,7 @@ export class MapBoxComponent {
         { selected: false }
       );
       this.selectedDistrictId = null;
+      this.districtState.districtCode.set(0);
     }
 
     this.map.flyTo({
