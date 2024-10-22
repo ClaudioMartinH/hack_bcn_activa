@@ -97,10 +97,10 @@ We welcome contributions! Feel free to fork the project, submit pull requests, o
 
 ## 🧑‍🤝‍🧑 Team
 This project was developed by the InclusioMap BCN team:
-- [Claudio](https://github.com/ClaudioMartinH/ClaudioMartinH) - Backend Developer
+- [Claudio](https://github.com/ClaudioMartinH) - Backend Developer
 - [Carol](https://github.com/Calonsogon) - Backend Developer
-- [Gonzalo](https://github.com/ghOdisea/ghOdisea) - Backend Developer
-- [Ivan](https://github.com/ivanetierra/ivanetierra) - Frontend Developer
+- [Gonzalo](https://github.com/ghOdisea) - Backend Developer
+- [Ivan](https://github.com/ivanetierra) - Frontend Developer
 - [Miriam](https://github.com/mmartincasas) - Frontend Developer
 - [Guifré](https://github.com/guifreribas) - Frontend Developer
 - [Silvia](https://github.com/SilviaEzra) - Frontend Developer
