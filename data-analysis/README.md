@@ -6,8 +6,8 @@ Trabajamos con **Power Bi** y **python** para depurar y limpiar solo las variabl
 
 ## Dataset explorados:
 
->"Informació històrica de la renda tributària"
->"Tipus d’ensenyament i localització del centre"
->"encuesta de brecha digital"
+- "Informació històrica de la renda tributària"
+- "Tipus d’ensenyament i localització del centre"
+- "encuesta de brecha digital"
 
 ## 
