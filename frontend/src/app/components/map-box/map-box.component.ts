@@ -57,7 +57,6 @@ export class MapBoxComponent {
   async carregarDadesGeojson() {
     try {
       const response = await firstValueFrom(this.http.get(this.url))
-      console.log(response)
       this.districts = {
         ...response,
         features: (response as any).features.map((feature: any) => ({
@@ -66,10 +65,10 @@ export class MapBoxComponent {
         }))
       };
       this.initMap();
-      this.getLngLat();
+      await this.getLngLat();
     } catch (error) {
 
-      console.log('ERRRORRR!!', error)
+      console.log('Error', error)
     }
 
   }
@@ -98,7 +97,6 @@ export class MapBoxComponent {
     }));
 
     this.map.on('load', () => {
-      console.log('Mapa carregat correctament');
       this.initializeGeojsonSources();
       setTimeout(() => {
         this.flyToBarcelona();
@@ -226,8 +224,7 @@ export class MapBoxComponent {
   }
 
   async getLngLat() {
-    this.map.on('click', (e) => {
-      console.log(e.lngLat);
+    this.map.on('click', async (e) => {
 
       const features = this.map.queryRenderedFeatures(e.point, {
         layers: ['districtes-layer'],
@@ -237,12 +234,15 @@ export class MapBoxComponent {
         const districId = clickedFeature?.properties?.['codi_districte'];
         if (districId) {
           this.zoomToDistrict(clickedFeature);
-          this.getDistrictData(districId);
+          const districts = await this.getDistricts();
+          const districtFinded = districts.find((district: any) => {
+            return district.district_code === districId
+          });
+          // await this.getDistrictData(districtFinded?._id);
+          // await this.getDistrictData(districId);
           this.districtState.districtCode.set(Number(districId));
         }
       }
-
-
     });
   }
 
@@ -302,15 +302,25 @@ export class MapBoxComponent {
     });
   }
 
+  async getDistricts(): Promise<any> {
+    try {
+      const response = await firstValueFrom(this.apiService.getDistricts());
+      return response;
+    } catch (error) {
+      console.log('Has some error', error)
+    }
+  }
 
   async getDistrictData(id: string) {
-    // const endpoints: DistrictEndpoint[] = ['digitalGap', 'educationalCenter', 'employmentSituation', 'incomePerPerson'];
-    // try {
-    //   const response = await Promise.all(endpoints.map(endpoint => firstValueFrom(this.apiService.getDistrict(id, endpoint))));
-    //   console.log({ response })
-    // } catch (error) {
-    //   console.error(error);
-    // }
+    const endpoints: DistrictEndpoint[] = ['digitalGap', 'educationalCenter', 'employmentSituation', 'incomePerPerson'];
+    try {
+      const requests = endpoints.map(endpoint =>
+        firstValueFrom(this.apiService.getDistrict(id, endpoint))
+      );
+      const responses = await Promise.all(requests);
+    } catch (error) {
+      console.error(error);
+    }
   }
 }
 
