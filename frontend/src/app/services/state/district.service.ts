@@ -6,7 +6,7 @@ import { District } from '../../models/district.interface';
 })
 export class DistrictService {
   private readonly district = signal<District | null>(null)
-  public districtCode = signal<number>(0)
+  public districtCode = signal<number | null>(null)
 
   constructor() { }
 

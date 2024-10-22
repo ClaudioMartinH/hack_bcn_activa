@@ -292,7 +292,7 @@ export class MapBoxComponent {
         { selected: false }
       );
       this.selectedDistrictId = null;
-      this.districtState.districtCode.set(0);
+      this.districtState.districtCode.set(null);
     }
 
     this.map.flyTo({

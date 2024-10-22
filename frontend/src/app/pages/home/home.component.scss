@@ -1,0 +1,18 @@
+:host {
+  --sidebar-width: 25%;
+  --main-width: 75%;
+}
+
+.grid-cols-sidebar {
+  grid-template-columns: var(--sidebar-width) var(--main-width);
+}
+
+app-center-info {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.transition-grid {
+  transition: grid-template-columns 0.5s ease-in-out;
+}
