@@ -10,4 +10,17 @@ Trabajamos con **Power Bi** y **python** para depurar y limpiar solo las variabl
 - "Tipus d’ensenyament i localització del centre"
 - "encuesta de brecha digital"
 
-## 
+## Las variables anañizadas de los datset son:
+
+- Proporción de personas sin acceso a internet en sus hogares
+- Distribución de acceso a internert por distrito
+- Distribución de acceso a internert por nivel académico
+- Renta por unidad familiar y distrito de los años 2015 a 2021
+- Distribución de centros educativos de formación reglada
+- Distribución de centros educativos de formación NO reglada
+
+### Desarrollo
+
+- Desde el editor de Power Query realizamos las siguientes transformaciones a las bases de datos.
+- Desde python realizamos agrupaciones de acuerdo a los distritos y exportamos según lo soliictado.
+
