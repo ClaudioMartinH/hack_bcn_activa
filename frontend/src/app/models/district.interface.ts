@@ -4,3 +4,6 @@ export interface District {
   educationalcenters: number;
   population: number;
 }
+
+
+export type DistrictEndpoint = 'digitalGap' | 'educationalCenter' | ' employmentSituation' | 'incomePerPerson'
