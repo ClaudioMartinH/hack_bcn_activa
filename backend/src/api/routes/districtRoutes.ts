@@ -1,26 +1,37 @@
-import express from 'express'
-import DistrictCotroller from '../controllers/districtController'
+import express from "express";
+import { DistrictCotroller } from "../controllers/districtController";
 
-const DistrictRoutes = express.Router()
-const districtController = new DistrictCotroller()
+const DistrictRoutes = express.Router();
+const districtController = new DistrictCotroller();
 
 // DistrictRoutes.get('/health', GetHealth)
-// DistrictRoutes.get('/districts', GetAllDistricts)
-// DistrictRoutes.get('/district/:id', GetDistrictById)
+DistrictRoutes.get("/districts", districtController.getAllDistricts);
+DistrictRoutes.get("/districts/:id", districtController.getDistrictById);
 
+DistrictRoutes.get(
+  "/districts/:id/digitalGap",
+  districtController.getDigitalGap
+);
+DistrictRoutes.get(
+  "/districts/:id/educationCentre",
+  districtController.getEducationCentre
+);
+DistrictRoutes.get(
+  "/districts/:id/employmentSituation",
+  districtController.getEmploymentSituation
+);
+DistrictRoutes.get(
+  "/districts/:id/incomePerPerson",
+  districtController.getIncomePerPerson
+);
 
-DistrictRoutes.get('/district/:id/digitalGap', districtController.getDistrictById)
-DistrictRoutes.get('/district/:id/educationCentre', districtController.getEducationCentre)
-DistrictRoutes.get('/district/:id/employmentSituation', districtController.getEmploymentSituation)
-DistrictRoutes.get('/district/:id/incomePerPerson', districtController.getIncomePerPerson)
+DistrictRoutes.post("/districts/create", districtController.createDistrict);
 
+DistrictRoutes.patch("/districts/edit/:id", districtController.editDistrict);
 
-DistrictRoutes.post('/district/create', districtController.createDistrict)
+DistrictRoutes.delete(
+  "/districts/delete/:id",
+  districtController.deleteDistrict
+);
 
-DistrictRoutes.patch('/district/edit/:id', districtController.editDistrict)
-
-
-DistrictRoutes.delete('/district/delete/:id', districtController.deleteDistrict)
-
-
-export default DistrictRoutes
+export default DistrictRoutes;

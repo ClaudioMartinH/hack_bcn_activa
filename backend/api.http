@@ -1,4 +1,8 @@
-GET http://localhost:3000/api/health HTTP/1.1
+GET http://localhost:3000/api/districts HTTP/1.1
+
+
+### 
+GET http://localhost:3000/api/districts/6717e7f88acd30ce50ec4e19 HTTP/1.1
 
 ###
 # POST http://localhost:3000/api/health HTTP/1.1

@@ -1,0 +1,2538 @@
+[
+  {
+    "district_id": 9,
+    "district_name": "Sant Andreu",
+    "addresses_road_name": "C Neopàtria",
+    "name": "Centre Educatiu Laia",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 1,
+    "district_name": "Ciutat Vella",
+    "addresses_road_name": "C Nou de Sant Francesc",
+    "name": "Escola Drassanes",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 1,
+    "district_name": "Ciutat Vella",
+    "addresses_road_name": "C Nou de Sant Francesc",
+    "name": "Escola Drassanes",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Olot",
+    "name": "Centre Educatiu Reina Elisenda",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Olot",
+    "name": "Centre Educatiu Reina Elisenda",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (0-3 anys)"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Olot",
+    "name": "Centre Educatiu Reina Elisenda",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 2,
+    "district_name": "Eixample",
+    "addresses_road_name": "C Padilla",
+    "name": "Escola Superior de Música de Catalunya",
+    "Type": "Reglada",
+    "Sub_type": "Música"
+  },
+  {
+    "district_id": 7,
+    "district_name": "Horta-Guinardó",
+    "addresses_road_name": "C Padilla",
+    "name": "Facultat de Ciències de la Salut Blanquerna - URL",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 10,
+    "district_name": "Sant Martí",
+    "addresses_road_name": "C Pallars",
+    "name": "Centre Educatiu Montseny-Poblenou",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 10,
+    "district_name": "Sant Martí",
+    "addresses_road_name": "C Pallars",
+    "name": "Centre Educatiu Montseny-Poblenou",
+    "Type": "Reglada",
+    "Sub_type": "Educació secundària"
+  },
+  {
+    "district_id": 10,
+    "district_name": "Sant Martí",
+    "addresses_road_name": "C Pallars",
+    "name": "Centre Educatiu Montseny-Poblenou",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 10,
+    "district_name": "Sant Martí",
+    "addresses_road_name": "C Pallars",
+    "name": "Escola La Llacuna del Poblenou",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 10,
+    "district_name": "Sant Martí",
+    "addresses_road_name": "C Pallars",
+    "name": "Escola La Llacuna del Poblenou",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 2,
+    "district_name": "Eixample",
+    "addresses_road_name": "C Pau Claris",
+    "name": "Centre Educatiu Lestonnac",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 2,
+    "district_name": "Eixample",
+    "addresses_road_name": "C Pau Claris",
+    "name": "Centre Educatiu Lestonnac",
+    "Type": "Reglada",
+    "Sub_type": "Educació secundària"
+  },
+  {
+    "district_id": 2,
+    "district_name": "Eixample",
+    "addresses_road_name": "C Pau Claris",
+    "name": "Centre Educatiu Lestonnac",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 2,
+    "district_name": "Eixample",
+    "addresses_road_name": "C Pau Claris",
+    "name": "Centre Educatiu Lestonnac",
+    "Type": "Reglada",
+    "Sub_type": "Formació professional"
+  },
+  {
+    "district_id": 2,
+    "district_name": "Eixample",
+    "addresses_road_name": "C Pau Claris",
+    "name": "Institut Català d'Avaluació de Polítiques Públiques",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 2,
+    "district_name": "Eixample",
+    "addresses_road_name": "C Pau Claris",
+    "name": "Institut Jaume Balmes",
+    "Type": "Reglada",
+    "Sub_type": "Educació secundària"
+  },
+  {
+    "district_id": 2,
+    "district_name": "Eixample",
+    "addresses_road_name": "C Pau Claris",
+    "name": "Institut Jaume Balmes",
+    "Type": "Reglada",
+    "Sub_type": "Formació professional"
+  },
+  {
+    "district_id": 4,
+    "district_name": "Les Corts",
+    "addresses_road_name": "C Pau Gargallo",
+    "name": "Centre de Recerca en Enginyeria Biomèdica",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 4,
+    "district_name": "Les Corts",
+    "addresses_road_name": "C Pau Gargallo",
+    "name": "Facultat de Belles Arts - UB",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 8,
+    "district_name": "Nou Barris",
+    "addresses_road_name": "C Pedraforca",
+    "name": "Institut Escola Ferrer i Guàrdia",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 8,
+    "district_name": "Nou Barris",
+    "addresses_road_name": "C Pedraforca",
+    "name": "Institut Escola Ferrer i Guàrdia",
+    "Type": "Reglada",
+    "Sub_type": "Educació secundària"
+  },
+  {
+    "district_id": 8,
+    "district_name": "Nou Barris",
+    "addresses_road_name": "C Pedraforca",
+    "name": "Institut Escola Ferrer i Guàrdia",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 1,
+    "district_name": "Ciutat Vella",
+    "addresses_road_name": "C Montalegre",
+    "name": "Facultat de Filosofia - UB",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 1,
+    "district_name": "Ciutat Vella",
+    "addresses_road_name": "C Montalegre",
+    "name": "Facultat de Geografia i Història - UB",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 1,
+    "district_name": "Ciutat Vella",
+    "addresses_road_name": "C Montalegre",
+    "name": "Grup de Recerca Multiculturalisme i Gènere",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 1,
+    "district_name": "Ciutat Vella",
+    "addresses_road_name": "C Montalegre",
+    "name": "Grup de Recerca sobre Exclusió i Control Socials. UB",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 1,
+    "district_name": "Ciutat Vella",
+    "addresses_road_name": "C Montalegre",
+    "name": "Grup de Recerca Treballs, Institucions i Gènere",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 1,
+    "district_name": "Ciutat Vella",
+    "addresses_road_name": "C Montalegre",
+    "name": "Seminari Interdisciplinar 'Mujeres y Sociedad'",
+    "Type": "Reglada",
+    "Sub_type": "Universitats"
+  },
+  {
+    "district_id": 5,
+    "district_name": "Sarrià-Sant Gervasi",
+    "addresses_road_name": "C Monterols",
+    "name": "Escola de Música l'Antàrtida",
+    "Type": "Reglada",
+    "Sub_type": "Música"
+  },
+  {
+    "district_id": 3,
+    "district_name": "Sants-Montjuïc",
+    "addresses_road_name": "C Montfar",
+    "name": "Escola La Muntanyeta",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 3,
+    "district_name": "Sants-Montjuïc",
+    "addresses_road_name": "C Montfar",
+    "name": "Escola La Muntanyeta",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Montornès",
+    "name": "Centre Educatiu  English School Barcelona",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Montornès",
+    "name": "Centre Educatiu  English School Barcelona",
+    "Type": "Reglada",
+    "Sub_type": "Educació secundària"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Montornès",
+    "name": "Centre Educatiu  English School Barcelona",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Montseny",
+    "name": "Centre Educatiu Sant Josep",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Montseny",
+    "name": "Centre Educatiu Sant Josep",
+    "Type": "Reglada",
+    "Sub_type": "Educació secundària"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Montseny",
+    "name": "Centre Educatiu Sant Josep",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (0-3 anys)"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Montseny",
+    "name": "Centre Educatiu Sant Josep",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 3,
+    "district_name": "Sants-Montjuïc",
+    "addresses_road_name": "C Motors",
+    "name": "Institut Mare de Déu de la Mercè",
+    "Type": "Reglada",
+    "Sub_type": "Formació professional"
+  },
+  {
+    "district_id": 5,
+    "district_name": "Sarrià-Sant Gervasi",
+    "addresses_road_name": "C Muntaner",
+    "name": "Centre Educatiu Nausica",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 5,
+    "district_name": "Sarrià-Sant Gervasi",
+    "addresses_road_name": "C Muntaner",
+    "name": "Centre Educatiu Nausica",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (0-3 anys)"
+  },
+  {
+    "district_id": 5,
+    "district_name": "Sarrià-Sant Gervasi",
+    "addresses_road_name": "C Muntaner",
+    "name": "Centre Educatiu Nausica",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Nàpols",
+    "name": "Centre Educatiu Sant Josep-Teresianes",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Nàpols",
+    "name": "Centre Educatiu Sant Josep-Teresianes",
+    "Type": "Reglada",
+    "Sub_type": "Educació secundària"
+  },
+  {
+    "district_id": 6,
+    "district_name": "Gràcia",
+    "addresses_road_name": "C Nàpols",
+    "name": "Centre Educatiu Sant Josep-Teresianes",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 7,
+    "district_name": "Horta-Guinardó",
+    "addresses_road_name": "C Natzaret",
+    "name": "Escola Mare de Déu de Montserrat *Natzaret",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  {
+    "district_id": 7,
+    "district_name": "Horta-Guinardó",
+    "addresses_road_name": "C Natzaret",
+    "name": "Escola Mare de Déu de Montserrat *Natzaret",
+    "Type": "Reglada",
+    "Sub_type": "Ensenyament infantil (3-6 anys)"
+  },
+  {
+    "district_id": 9,
+    "district_name": "Sant Andreu",
+    "addresses_road_name": "C Neopàtria",
+    "name": "Centre Educatiu Laia",
+    "Type": "Reglada",
+    "Sub_type": "Educació primària"
+  },
+  [
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Pedrera del Mussol",
+      "name": "Escola Can Clos",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Pedrera del Mussol",
+      "name": "Escola Can Clos",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Pelai",
+      "name": "Centre Educatiu Stucom Pelai",
+      "Type": "Reglada",
+      "Sub_type": "Adults"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Pelai",
+      "name": "Centre Educatiu Stucom Pelai",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Perafita",
+      "name": "Institut Escola Mestre Morera",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Perafita",
+      "name": "Institut Escola Mestre Morera",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Perafita",
+      "name": "Institut Escola Mestre Morera",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Peris i Mencheta",
+      "name": "Centre Educatiu Sagrada Famílía-Horta",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Peris i Mencheta",
+      "name": "Centre Educatiu Sagrada Famílía-Horta",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Peris i Mencheta",
+      "name": "Centre Educatiu Sagrada Famílía-Horta",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Perú",
+      "name": "Escola Catalònia",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Perú",
+      "name": "Escola Catalònia",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Perú",
+      "name": "Escola Provençals",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Perú",
+      "name": "Escola Provençals",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Perú",
+      "name": "InnoBA - Centre per a la Innovació Socioeconòmica",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Pi i Margall",
+      "name": "Escola de Música Allegretto - Gràcia",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Pintor Alsamora",
+      "name": "Institut Escola d'Hoteleria i Turisme de Barcelona",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Pintor Alsamora",
+      "name": "Institut Valldemossa",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 4,
+      "district_name": "Les Corts",
+      "addresses_road_name": "C Pintor Ribalta",
+      "name": "Centre Educatiu Barcelona Vitae Les Corts",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Potosí",
+      "name": "Centre d'Educació Monlausports",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Provença",
+      "name": "Centre Educatiu Formació Empresarial Dual Alemana - Barcelona",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Provença",
+      "name": "Centre Educatiu San Nicolas",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Provença",
+      "name": "Centre Educatiu San Nicolas",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Provença",
+      "name": "Centre Educatiu San Nicolas",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Provença",
+      "name": "Fundació Centre Internacional d'Hidrologia Subterrània",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    }
+  ],
+  [
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Ramon Batlle",
+      "name": "Centre Educatiu FEDAC-Sant Andreu",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Centre de  Recerca en Economia Internacional",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Centre de Recerca en Economia Financera",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Centre de Recerca en Economia i Salut",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Facultat de Ciències Econòmiques i Empresarials - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Facultat de Ciències Polítiques i Socials - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Facultat d'Humanitats - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Institut Universitari Cultura",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Institut Universitari d'Història Jaume Vicens Vives",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Turró",
+      "name": "Centre Educatiu Voramar",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; prim&agrave;ria"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Turró",
+      "name": "Centre Educatiu Voramar",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; secund&agrave;ria"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Turró",
+      "name": "Centre Educatiu Voramar",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Rector Ubach",
+      "name": "Centre Educatiu Augusta",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; prim&agrave;ria"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Rector Ubach",
+      "name": "Centre Educatiu Augusta",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; secund&agrave;ria"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Rector Ubach",
+      "name": "Centre Educatiu Augusta",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Requesens",
+      "name": "Escola de Música Taller de Músics",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Riera de Sant Miquel",
+      "name": "Escola Josep Maria Jujol",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; prim&agrave;ria"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Riera de Sant Miquel",
+      "name": "Escola Josep Maria Jujol",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Riera de Sant Miquel",
+      "name": "Institut Vila de Gràcia",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; secund&agrave;ria"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Riereta",
+      "name": "Centre Educatiu Cintra",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; secund&agrave;ria"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Roc Boronat",
+      "name": "Escola d'Enginyeria *Campus de la Comunicació-Poblenou - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Roc Boronat",
+      "name": "Facultat de Comunicació *Campus de la Comunicació-Poblenou - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Roc Boronat",
+      "name": "Facultat de Traducció i Ciències del Llenguatge - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Rocafort",
+      "name": "Artmusic Escola de Música i Dansa",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Rocafort",
+      "name": "Centre Educatiu Mediterrani",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Rocafort",
+      "name": "Centre Educatiu Salesià de Sant Josep",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; prim&agrave;ria"
+    }
+  ],
+  [
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Provença",
+      "name": "Institut Poeta Maragall",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Provençals",
+      "name": "Centre Educatiu Grèvol",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Provençals",
+      "name": "Centre Educatiu Grèvol",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Provençals",
+      "name": "Centre Educatiu Grèvol",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Providència",
+      "name": "Escola Pau Casals-Gràcia",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Providència",
+      "name": "Escola Pau Casals-Gràcia",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Puig-reig",
+      "name": "Centre Educatiu Lys",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Puig-reig",
+      "name": "Centre Educatiu Lys",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Pujades",
+      "name": "Aula de Música",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Pujades",
+      "name": "BAU, Centre Universitari d'Arts i Disseny de Barcelona",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Pujades",
+      "name": "Escola Les Acàcies",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Pujades",
+      "name": "Escola Les Acàcies",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Pujalt",
+      "name": "Institut Escola Ciutat Comtal",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Pujalt",
+      "name": "Institut Escola Ciutat Comtal",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Pujalt",
+      "name": "Institut Escola Ciutat Comtal",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Quatre Camins",
+      "name": "Centre de Desenvolupament Electrònic i Informàtic",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Quatre Camins",
+      "name": "Escola Tècnica Superior d'Arquitectura La Salle - URL",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Quatre Camins",
+      "name": "Parc d'Innovació Tecnològica i Empresarial La Salle",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Quito",
+      "name": "Centre Educatiu FEP L'Esperança",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Quito",
+      "name": "Centre Educatiu FEP L'Esperança",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Quito",
+      "name": "Centre Educatiu FEP L'Esperança",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Quito",
+      "name": "Centre Educatiu FEP L'Esperança",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Ramon Batlle",
+      "name": "Centre Educatiu FEDAC-Sant Andreu",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Ramon Batlle",
+      "name": "Centre Educatiu FEDAC-Sant Andreu",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    }
+  ],
+  [
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Ramon Batlle",
+      "name": "Centre Educatiu FEDAC-Sant Andreu",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Centre de  Recerca en Economia Internacional",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Centre de Recerca en Economia Financera",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Centre de Recerca en Economia i Salut",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Facultat de Ciències Econòmiques i Empresarials - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Facultat de Ciències Polítiques i Socials - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Facultat d'Humanitats - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Institut Universitari Cultura",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Trias Fargas",
+      "name": "Institut Universitari d'Història Jaume Vicens Vives",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Turró",
+      "name": "Centre Educatiu Voramar",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; prim&agrave;ria"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Turró",
+      "name": "Centre Educatiu Voramar",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; secund&agrave;ria"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Ramon Turró",
+      "name": "Centre Educatiu Voramar",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Rector Ubach",
+      "name": "Centre Educatiu Augusta",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; prim&agrave;ria"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Rector Ubach",
+      "name": "Centre Educatiu Augusta",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; secund&agrave;ria"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Rector Ubach",
+      "name": "Centre Educatiu Augusta",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Requesens",
+      "name": "Escola de Música Taller de Músics",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Riera de Sant Miquel",
+      "name": "Escola Josep Maria Jujol",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; prim&agrave;ria"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Riera de Sant Miquel",
+      "name": "Escola Josep Maria Jujol",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Riera de Sant Miquel",
+      "name": "Institut Vila de Gràcia",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; secund&agrave;ria"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Riereta",
+      "name": "Centre Educatiu Cintra",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; secund&agrave;ria"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Roc Boronat",
+      "name": "Escola d'Enginyeria *Campus de la Comunicació-Poblenou - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Roc Boronat",
+      "name": "Facultat de Comunicació *Campus de la Comunicació-Poblenou - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Roc Boronat",
+      "name": "Facultat de Traducció i Ciències del Llenguatge - UPF",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Rocafort",
+      "name": "Artmusic Escola de Música i Dansa",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Rocafort",
+      "name": "Centre Educatiu Mediterrani",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Rocafort",
+      "name": "Centre Educatiu Salesià de Sant Josep",
+      "Type": "Reglada",
+      "Sub_type": "Educaci&oacute; prim&agrave;ria"
+    }
+  ],
+  [
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sagrera",
+      "name": "Centre Educatiu Mare de Dèu dels Àngels",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Sagunt",
+      "name": "Escola Cal Maiol",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Sagunt",
+      "name": "Escola Cal Maiol",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Salvador Aulet",
+      "name": "Escola Baixeras",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Salvador Aulet",
+      "name": "Escola Baixeras",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Adrià",
+      "name": "Centre Educatiu FEP Bon Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Adrià",
+      "name": "Centre Educatiu FEP Bon Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Adrià",
+      "name": "Centre Educatiu FEP Bon Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Adrià",
+      "name": "Institut Martí Pous",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre Educatiu Claret",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre Educatiu Claret",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre Educatiu Claret",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre d'Estudis Universitat dels Pacients",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Escola Doctor Robert",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Fundació Salut i Envelliment UAB",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Institut de Ciències de l'Educació de la Universitat Autònoma de Barcelona *Sant Pau",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Programa de Coeducació",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Unitat Docent Hospital Universitari de la Santa Creu i Sant Pau",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre Educatiu Sant Antoni Maria Claret",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Camil",
+      "name": "Escola la Farigola de Vallcarca",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Camil",
+      "name": "Escola la Farigola de Vallcarca",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Sant Feliu de Codines",
+      "name": "Institut Pablo Ruiz Picasso",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Sant Gervasi de Cassoles",
+      "name": "Institut Universitari de Salut Mental Vidal i Barraquer -URL",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Sant Joan de Malta",
+      "name": "Escola Casas",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Sant Joan de Malta",
+      "name": "Escola Casas",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Sant Joan de Malta",
+      "name": "Escola Sant Martí",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Sant Joan de Malta",
+      "name": "Escola Sant Martí",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Lluís",
+      "name": "Escola de Música de Gràcia",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Sant Pau",
+      "name": "Escola Collaso i Gil",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Sant Pau",
+      "name": "Escola Collaso i Gil",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Sant Pere Claver",
+      "name": "Centre Educatiu Casa del Roure",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Sant Pere Més Baix",
+      "name": "Escola Cervantes",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Sant Pere Més Baix",
+      "name": "Escola Cervantes",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Quintí",
+      "name": "Escola per a Infants",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Quintí",
+      "name": "Escola per a Infants",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Quintí",
+      "name": "Escola per a Infants",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Quintí",
+      "name": "Institut de Recerca Sant Pau - Centre CERCA",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Salvador",
+      "name": "Centre Villar",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Sebastià",
+      "name": "Centre Educatiu Jesús, Maria i Josep",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Sebastià",
+      "name": "Centre Educatiu Jesús, Maria i Josep",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Sebastià",
+      "name": "Centre Educatiu Jesús, Maria i Josep",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Sebastià",
+      "name": "Institut Joan Brossa",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Sant Vincent Màrtir",
+      "name": "Institut Cerdanya",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Santa Anna",
+      "name": "Escola Sant Just i Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Santa Anna",
+      "name": "Escola Sant Just i Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Eulàlia",
+      "name": "Institut Santa Eulàlia",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Eulàlia",
+      "name": "Institut Santa Eulàlia",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Santa Fe de Nou Mèxic",
+      "name": "Escola Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Santa Fe de Nou Mèxic",
+      "name": "Escola Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Santa Fe de Nou Mèxic",
+      "name": "Escola Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Santa Maria de la Salut",
+      "name": "Escola de Música de Sarrià",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Rita",
+      "name": "Escola d'Educació Especial Mare de Déu de Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Educació especial"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Rita",
+      "name": "Escola d'Educació Especial Mare de Déu de Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Rita",
+      "name": "Escola d'Educació Especial Mare de Déu de Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Santa Teresa de Jesús",
+      "name": "Escola Santa Teresa",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Santa Teresa de Jesús",
+      "name": "Escola Santa Teresa",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    }
+  ],
+  [
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sagrera",
+      "name": "Centre Educatiu Mare de Dèu dels Àngels",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Sagunt",
+      "name": "Escola Cal Maiol",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Sagunt",
+      "name": "Escola Cal Maiol",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Salvador Aulet",
+      "name": "Escola Baixeras",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Salvador Aulet",
+      "name": "Escola Baixeras",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Adrià",
+      "name": "Centre Educatiu FEP Bon Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Adrià",
+      "name": "Centre Educatiu FEP Bon Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Adrià",
+      "name": "Centre Educatiu FEP Bon Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Adrià",
+      "name": "Institut Martí Pous",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre Educatiu Claret",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre Educatiu Claret",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre Educatiu Claret",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre d'Estudis Universitat dels Pacients",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Escola Doctor Robert",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Fundació Salut i Envelliment UAB",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Institut de Ciències de l'Educació de la Universitat Autònoma de Barcelona *Sant Pau",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Programa de Coeducació",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Unitat Docent Hospital Universitari de la Santa Creu i Sant Pau",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Antoni Maria Claret",
+      "name": "Centre Educatiu Sant Antoni Maria Claret",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Camil",
+      "name": "Escola la Farigola de Vallcarca",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Camil",
+      "name": "Escola la Farigola de Vallcarca",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Sant Feliu de Codines",
+      "name": "Institut Pablo Ruiz Picasso",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Sant Gervasi de Cassoles",
+      "name": "Institut Universitari de Salut Mental Vidal i Barraquer -URL",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Sant Joan de Malta",
+      "name": "Escola Casas",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Sant Joan de Malta",
+      "name": "Escola Casas",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Sant Joan de Malta",
+      "name": "Escola Sant Martí",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Sant Joan de Malta",
+      "name": "Escola Sant Martí",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Lluís",
+      "name": "Escola de Música de Gràcia",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Sant Pau",
+      "name": "Escola Collaso i Gil",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Sant Pau",
+      "name": "Escola Collaso i Gil",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Sant Pere Claver",
+      "name": "Centre Educatiu Casa del Roure",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Sant Pere Més Baix",
+      "name": "Escola Cervantes",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Sant Pere Més Baix",
+      "name": "Escola Cervantes",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Quintí",
+      "name": "Escola per a Infants",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Quintí",
+      "name": "Escola per a Infants",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Quintí",
+      "name": "Escola per a Infants",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sant Quintí",
+      "name": "Institut de Recerca Sant Pau - Centre CERCA",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sant Salvador",
+      "name": "Centre Villar",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Sebastià",
+      "name": "Centre Educatiu Jesús, Maria i Josep",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Sebastià",
+      "name": "Centre Educatiu Jesús, Maria i Josep",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Sebastià",
+      "name": "Centre Educatiu Jesús, Maria i Josep",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Sant Sebastià",
+      "name": "Institut Joan Brossa",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Sant Vincent Màrtir",
+      "name": "Institut Cerdanya",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Santa Anna",
+      "name": "Escola Sant Just i Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Santa Anna",
+      "name": "Escola Sant Just i Pastor",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Eulàlia",
+      "name": "Institut Santa Eulàlia",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Eulàlia",
+      "name": "Institut Santa Eulàlia",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Santa Fe de Nou Mèxic",
+      "name": "Escola Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Santa Fe de Nou Mèxic",
+      "name": "Escola Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Santa Fe de Nou Mèxic",
+      "name": "Escola Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Santa Maria de la Salut",
+      "name": "Escola de Música de Sarrià",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Rita",
+      "name": "Escola d'Educació Especial Mare de Déu de Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Educació especial"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Rita",
+      "name": "Escola d'Educació Especial Mare de Déu de Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santa Rita",
+      "name": "Escola d'Educació Especial Mare de Déu de Montserrat",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Santa Teresa de Jesús",
+      "name": "Escola Santa Teresa",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Santa Teresa de Jesús",
+      "name": "Escola Santa Teresa",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    }
+  ],
+  [
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Santander",
+      "name": "Institut Salvador Seguín",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Sants",
+      "name": "Centre Educatiu Lloret",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Sants",
+      "name": "Centre Educatiu Lloret",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (0-3 anys)"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Sants",
+      "name": "Centre Educatiu Lloret",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santuari",
+      "name": "Centre Educatiu Mare de Déu del Coll",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santuari",
+      "name": "Centre Educatiu Mare de Déu del Coll",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Santuari",
+      "name": "Centre Educatiu Mare de Déu del Coll",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Sardenya",
+      "name": "Escola Fructuós Gelabert",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Sardenya",
+      "name": "Escola Fructuós Gelabert",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Sardenya",
+      "name": "Escola Municipal de Música Eixample Joan Manuel Serrat",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sardenya",
+      "name": "Escola Sagrada Família Gràcia *Sardenya",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sardenya",
+      "name": "Escola Sagrada Família Gràcia *Sardenya",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sardenya",
+      "name": "Escola  de les Aigües",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Sardenya",
+      "name": "Escola  de les Aigües",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Scala Dei",
+      "name": "Centre Educatiu Providencia del Corazón de Jesús",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Scala Dei",
+      "name": "Centre Educatiu Providencia del Corazón de Jesús",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Scala Dei",
+      "name": "Centre Educatiu Providencia del Corazón de Jesús",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Segre",
+      "name": "Escola Superior d'Estudis Musicals Taller de Músics",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Selva de Mar",
+      "name": "Institut Joan d'Àustria",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Selva de Mar",
+      "name": "Institut Joan d'Àustria",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sèneca",
+      "name": "Escola de Música Joan Llongueres",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Sepúlveda",
+      "name": "Centre Educatiu Maria Auxiliadora",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Sicília",
+      "name": "Institut Escola Sicília",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Sicília",
+      "name": "Institut Escola Sicília",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Sicília",
+      "name": "Institut Escola Sicília",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Sol",
+      "name": "Escola de Música Musics'Son",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    }
+  ],
+  [
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Tamarit",
+      "name": "Escola de Perruqueria Miguel Griñó",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 1,
+      "district_name": "Ciutat Vella",
+      "addresses_road_name": "C Tàpies",
+      "name": "Centre Educatiu Impulsem",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C Tarragona",
+      "name": "Centre Universitari EAE Business School",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Telègraf",
+      "name": "Escola Estel-Guinardó",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 7,
+      "district_name": "Horta-Guinardó",
+      "addresses_road_name": "C Telègraf",
+      "name": "Escola Estel-Guinardó",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 4,
+      "district_name": "Les Corts",
+      "addresses_road_name": "C Tinent Coronel Valenzuela",
+      "name": "Institut d'Economia de Barcelona",
+      "Type": "Reglada",
+      "Sub_type": "Universitats"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Tinent Flomesta",
+      "name": "Escola de Música Diesi",
+      "Type": "Reglada",
+      "Sub_type": "Música"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Torre",
+      "name": "Centre Educatiu Madres Concepcionistas de la Enseñanza",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Torre",
+      "name": "Centre Educatiu Madres Concepcionistas de la Enseñanza",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 5,
+      "district_name": "Sarrià-Sant Gervasi",
+      "addresses_road_name": "C Torre",
+      "name": "Centre Educatiu Madres Concepcionistas de la Enseñanza",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Torrent de can Piquer",
+      "name": "Centre Educatiu Aloma",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Torrent de can Piquer",
+      "name": "Centre Educatiu Aloma",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 8,
+      "district_name": "Nou Barris",
+      "addresses_road_name": "C Torrent de can Piquer",
+      "name": "Centre Educatiu Aloma",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Torrent del Remei",
+      "name": "Escola Montseny *Torrent del Remei",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 6,
+      "district_name": "Gràcia",
+      "addresses_road_name": "C Torrent del Remei",
+      "name": "Escola Montseny *Torrent del Remei",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 9,
+      "district_name": "Sant Andreu",
+      "addresses_road_name": "C Torroella de Montgrí",
+      "name": "Institut Príncep de Viana",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Treball",
+      "name": "Centre Educatiu San Francisco",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Treball",
+      "name": "Centre Educatiu San Francisco",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 10,
+      "district_name": "Sant Martí",
+      "addresses_road_name": "C Treball",
+      "name": "Centre Educatiu San Francisco",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Tres Pins",
+      "name": "Escola Tres Pins",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 3,
+      "district_name": "Sants-Montjuïc",
+      "addresses_road_name": "C Tres Pins",
+      "name": "Escola Tres Pins",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C València",
+      "name": "Centre Educatiu Maristes La Immaculada",
+      "Type": "Reglada",
+      "Sub_type": "Educació primària"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C València",
+      "name": "Centre Educatiu Maristes La Immaculada",
+      "Type": "Reglada",
+      "Sub_type": "Educació secundària"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C València",
+      "name": "Centre Educatiu Maristes La Immaculada",
+      "Type": "Reglada",
+      "Sub_type": "Ensenyament infantil (3-6 anys)"
+    },
+    {
+      "district_id": 2,
+      "district_name": "Eixample",
+      "addresses_road_name": "C València",
+      "name": "Centre Educatiu Maristes La Immaculada",
+      "Type": "Reglada",
+      "Sub_type": "Formació professional"
+    }
+  ]
+]
