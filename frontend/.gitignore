@@ -43,7 +43,7 @@ Thumbs.db
 
 
 # Environment files
-/src/environments/environment.ts
-/src/environments/environment.*.ts
-/src/environments/environment.prod.ts
-/src/environments/environment.development.ts
+frontend/src/environments/environment.ts
+frontend/src/environments/environment.*.ts
+frontend/src/environments/environment.prod.ts
+frontend/src/environments/environment.development.ts
