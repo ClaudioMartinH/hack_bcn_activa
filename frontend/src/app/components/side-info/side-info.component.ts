@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
+import { DistrictService } from '../../services/state/district.service';
 
 
 @Component({
@@ -11,7 +12,8 @@ import { Component, HostListener } from '@angular/core';
 })
 export class SideInfoComponent {
 
-  sidebarVisible: boolean = false;
+  public sidebarVisible: boolean = false;
+  public districtState = inject(DistrictService);
 
   toggleSidebar() {
     this.sidebarVisible = !this.sidebarVisible;
