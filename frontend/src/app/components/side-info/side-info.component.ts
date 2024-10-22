@@ -21,7 +21,6 @@ export class SideInfoComponent {
     return window.innerWidth < 768;
   }
 
-  // Escuchar cambios en el tamaño de la pantalla para ajustar el sidebar si cambia el viewport
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     if (!this.isMobile()) {

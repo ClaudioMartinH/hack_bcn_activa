@@ -1,12 +1,11 @@
 <div class="flex flex-col md:flex-row">
-    <!-- Botón para móviles -->
+  
     <div class="md:hidden fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center">
       <button (click)="toggleSidebar()" class="text-white font-bold">
-        {{ sidebarVisible ? 'Ocultar Información del Distrito' : 'Mostrar Información del Distrito' }}
+        Mostrar Información del Distrito
       </button>
     </div>
   
-    <!-- Sidebar -->
     <aside [ngClass]="{
       'hidden': !sidebarVisible && isMobile(), 
       'fixed bottom-0 w-full': isMobile(), 
@@ -15,10 +14,13 @@
       <h2 class="text-xl font-bold mb-4">Información del Distrito</h2>
 
       @if(sidebarVisible){
-        <button (click)="toggleSidebar()" class="btn btn-blue" >Button</button>
+        <button (click)="toggleSidebar()" class="text-white hover:bg-cyan-400 rounded-full p-2 focus:outline-none focus:ring-2">
+          <span class="text-xl">✖</span>
+      </button>
       }
+
+      
   
-      <!-- Información del distrito -->
       <div class="bg-gray-700 p-4 rounded">
         <h3 class="text-2xl font-semibold mb-2">Eixample</h3>
         <p class="mb-2"><span class="font-semibold">Población:</span> 300,000</p>
